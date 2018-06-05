@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git(url: 'https://github.com/OpenDurian/poc-managed-cdn.git', branch: 'master')
+        git(url: 'https://github.com/OpenDurian/poc-managed-cdn.git', branch: 'master', credentialsId: 'github')
       }
     }
   }
